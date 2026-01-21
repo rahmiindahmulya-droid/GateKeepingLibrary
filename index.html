@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Indah Library</title>
+  <style>
+    body {
+      background: #111827;
+      color: white;
+      font-family: Arial;
+      padding: 30px;
+    }
+    input, button {
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .isi {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<h2>🔒 Login</h2>
+
+<input type="password" id="pw" placeholder="password">
+<br>
+<button onclick="login()">Masuk</button>
+
+<div class="isi" id="isi">
+  <h1>📚 Library Indah</h1>
+
+  <h3>Manga</h3>
+  <ul>
+    <li><a href="manga/manga1.html">Judul Manga</a></li>
+  </ul>
+
+  <h3>Novel</h3>
+  <ul>
+    <li><a href="novel/novel1.html">Judul Novel</a></li>
+  </ul>
+
+  <h3>Link Website</h3>
+  <ul>
+    <li><a href="https://google.com" target="_blank">Google</a></li>
+  </ul>
+</div>
+
+<script>
+  function login() {
+    if (document.getElementById("pw").value === "12345") {
+      document.getElementById("isi").style.display = "block";
+    } else {
+      alert("Password salah");
+    }
+  }
+</script>
+
+</body>
+</html>
